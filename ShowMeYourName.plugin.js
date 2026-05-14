@@ -2,6 +2,7 @@
  * @name ShowMeYourName
  * @author KingGamingYT
  * @description Displays a person's username next to their global name/nickname on chat messages.
+ * @runAt idle
  * @version 1.0.0
  */ 
 
