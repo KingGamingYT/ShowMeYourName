@@ -3,7 +3,7 @@
  * @author KingGamingYT
  * @description Displays a person's username next to their global name/nickname on chat messages.
  * @runAt idle
- * @version 1.0.0
+ * @version 1.0.1
  */ 
 
 const { Data, Webpack, React, Patcher, DOM, UI, Utils } = BdApi;
@@ -15,7 +15,6 @@ const message = Webpack.getMangled("usernameSpanId", {
 });
 const Popout = Webpack.getByStrings("Unsupported animation config:", { searchExports: true });
 const GuildMemberStore = Webpack.getStore("GuildMemberStore");
-const UserStore = Webpack.getStore("UserStore");
 
 const changelog = {
     changelog: [
@@ -23,7 +22,7 @@ const changelog = {
             "title": "Changes",
             "type" : "improved",
             "items": [
-                "Released."
+                "Fixed a crash."
             ]
         }
     ]
